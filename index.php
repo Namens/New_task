@@ -1,6 +1,10 @@
 <?php
     include 'access/function.php';
 
+    $category = ' ';
+    $min_price = ' ';
+    $max_price = ' ';
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $category = isset($_POST['category']) ? $_POST['category'] : '';
         $min_price = isset($_POST['min_price']) ? $_POST['min_price'] : '';
