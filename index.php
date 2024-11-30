@@ -59,7 +59,7 @@
         <?php
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-                echo "<li>" . htmlspecialchars($row['name']) . " - " . htmlspecialchars($row['category']) . " - " . htmlspecialchars($row['price']) . " руб.</li>";
+                echo "<li> Название: " . htmlspecialchars($row['name']) . " *** Категория: " . htmlspecialchars($row['category']) . " *** Цена: " . htmlspecialchars($row['price']) . " руб.</li>";
             }
         } else {
             echo "<li>Нет таких товаров.</li>";
